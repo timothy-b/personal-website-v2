@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Project from "../../components/Project/index.jsx";
+import Project from "../components/project.jsx";
 
 const Home = () => (
   <Fragment>
@@ -17,6 +17,17 @@ const Home = () => (
             I thought it would be fun to use React and Node in a side project, and here it is!
           </p>
           <a href="https://github.com/timothy-b/personal-website-v2">GitHub</a>
+        </Fragment>
+      )} />
+    <Project 
+      aboutPageLink="/detail/iot-sec"
+      title="IOT Home Security"
+      body={(
+        <Fragment>
+          <p>
+            A basic IOT security system using a Particle Photon and a Raspberry Pi.
+          </p>
+          <a href="https://github.com/timothy-b/iot-sec">GitHub</a>
         </Fragment>
       )} />
     <Project

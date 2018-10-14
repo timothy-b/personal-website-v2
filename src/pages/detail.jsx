@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import apacheLogo from '../../Apache_server.png';
-import nodeLogo from '../../nodejs-new-pantone-white.png';
-import reactLogo from '../../reactLogo.svg';
-import staScreenshot from '../../STA_app_screenshot_0.png';
+import apacheLogo from '../Apache_server.png';
+import nodeLogo from '../nodejs-new-pantone-white.png';
+import reactLogo from '../reactLogo.svg';
+import staScreenshot from '../STA_app_screenshot_0.png';
 
 const Detail = ({remainingUrlComponents}) => {
   
@@ -25,6 +25,18 @@ const Detail = ({remainingUrlComponents}) => {
   );
 }
 
+const iotSec =
+  <div className="project">
+    <h2>
+      <span className="project__title">IOT Home Security</span>
+    </h2>
+    <p>
+      A magnet is attached to a door, with a magnet sensor on the doorframe, which is wired to a Particle Photon, which has a webhook configured to send a message to a Raspberry Pi.
+      The Pi scans my WiFi network for my phone. If undetected, it sends me a text message indicating that the door is open.
+    </p>
+    <a href="https://github.com/timothy-b/iot-sec">GitHub</a>
+  </div>;
+
 const personalWebsiteV2 =
   <div className="project">
     <h2>
@@ -34,6 +46,8 @@ const personalWebsiteV2 =
       In school I used Apache, PHP, and jQuery. At work I use IIS, .NET MVC, ASP.NET, and React. I thought it would be fun to use Apache, Node, and React, and I wasn't a fan of my previous homepage's setup with Drupal, so I decided to start working on this site as a side project.
     </p>
     <img src={apacheLogo} className="apacheLogo" alt="Apache Logo" />&emsp;<img src={nodeLogo} className="nodeLogo" alt="Nodejs Logo" /><img src={reactLogo} className="reactLogo" alt="React Logo" style={{height: "60px"}} />
+    <br/>
+    <a href="https://github.com/timothy-b/personal-website-v2">GitHub</a>
   </div>;
 
 const spokaneTransitApp =
@@ -53,10 +67,12 @@ const spokaneTransitApp =
         </p>
       </div>
     </div>
+    <a href="https://github.com/cstaaben/transit-webApp">GitHub</a> | <a href="http://timothy-b.com/transit-webApp/busForm.html">see it live</a>
     <div className="spaceRow" />
   </div>;
 
 const routeMap = {
+  "iot-sec": iotSec,
   "personal-website-v2": personalWebsiteV2,
   "spokane-transit-app": spokaneTransitApp
 }

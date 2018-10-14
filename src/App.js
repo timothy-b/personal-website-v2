@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Detail from './pages/Detail/index.jsx';
-import Home from './pages/Home/index.jsx';
+import About from './pages/about.jsx';
+import Detail from './pages/detail.jsx';
+import Home from './pages/home.jsx';
 import githubLogo from './GitHub_Logo_White.png';
 import githubImage from './GitHub-Mark-Light-32px.png';
 import linkedinLogo from './LinkedIn_Logo_White.png';
@@ -16,7 +17,6 @@ class App extends Component {
     const urlComponents = window.location.href.split('/');
     const topLevelRoute = urlComponents[3];
     const remainingUrlComponents = urlComponents.slice(4);
-    console.log(remainingUrlComponents);
 
     this.state = { topLevelRoute, remainingUrlComponents };
   }
@@ -25,8 +25,8 @@ class App extends Component {
     const { topLevelRoute, remainingUrlComponents } = this.state;
 
     let component = <Home />;
-    if (topLevelRoute.toLowerCase() === "detail")
-      component = <Detail remainingUrlComponents={remainingUrlComponents} />;
+    if (routeMap.hasOwnProperty(topLevelRoute.toLowerCase()))
+      component = routeMap[topLevelRoute.toLowerCase()](remainingUrlComponents);
 
     return (
       <div className="App">
@@ -50,5 +50,10 @@ class App extends Component {
     );
   };
 }
+
+const routeMap = {
+  "about": () => <About />,
+  "detail": (remainingUrlComponents) => <Detail remainingUrlComponents={remainingUrlComponents} />
+};
 
 export default App;
