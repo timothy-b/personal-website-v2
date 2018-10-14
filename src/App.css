@@ -7,17 +7,25 @@
   background-color: #2b3e50;
 }
 
-.App-reactLogo {
+.apacheLogo {
+  height: 60px;
+}
+
+.reactLogo {
   animation: App-logo-spin infinite 30s linear;
   height: 40px;
 }
 
-.App-githubLogo {
-  height: 40px;
+.githubLogo {
+  height: 36px;
 }
 
-.App-linkedinLogo {
-  height: 32px;
+.linkedinLogo {
+  height: 28px;
+}
+
+.nodeLogo {
+  height: 128px;
 }
 
 .App-header {
@@ -58,10 +66,14 @@
   color: white;
 }
 
-.project__title, .menu__link {
+.project__title, .menu__link, .menu__breadcrumb {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: orangered;
+}
+
+.menu__breadcrumb {
+  float: left;
 }
 
 .menu__link {
@@ -94,4 +106,9 @@ div>.container {
 
 .project p {
   color: white;
+}
+
+.spaceRow {
+  margin-bottom: 1em;
+  background-color: #2b3e50;
 }
