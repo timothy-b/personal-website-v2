@@ -4,7 +4,7 @@
 
 .App {
   text-align: center;
-  background-color: #2b3e50;
+  background-color: black;
 }
 
 .apacheLogo {
@@ -68,8 +68,27 @@
 
 .project__title, .menu__link, .menu__breadcrumb {
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  color: orangered;
+  font-weight: 500;
+  color: white;
+}
+
+.App-footer a {
+  color: #00bbff;
+}
+
+.App-footer a:hover {
+  color: #47c4fd;
+  text-decoration: none;
+}
+
+.project a:hover {
+  color: #47c4fd;
+  text-decoration: none;
+}
+
+.project__title:hover, .menu__link:hover, .menu__breadcrumb:hover {
+  color: #00bbff;
+  text-decoration: none;
 }
 
 .menu__breadcrumb {
@@ -81,7 +100,7 @@
 }
 
 .row>.project {
-  background-color: #4e5d6c;
+  background-color: #2b3e50;
   overflow: auto;
   display: block;
 }
@@ -101,7 +120,7 @@ div>.container {
 }
 
 .project a {
-  color: orangered;
+  color: #00bbff;
 }
 
 .project p {
@@ -111,4 +130,16 @@ div>.container {
 .spaceRow {
   margin-bottom: 1em;
   background-color: #2b3e50;
+}
+
+.project h2 {
+  background-color: #3d3d3d;
+}
+
+#headerRow a {
+  color: #00bbff;
+}
+
+#headerRow a:hover {
+  color: #47c4fd;
 }

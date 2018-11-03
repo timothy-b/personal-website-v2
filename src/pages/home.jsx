@@ -4,9 +4,9 @@ import Project from "../components/project.jsx";
 const Home = () => (
   <Fragment>
     <div className="row" id="headerRow">
-          <h3 className="projects__header">Selected Projects</h3>
-          <a href="/about" className="menu__link">About</a>
-        </div>
+      <h3 className="projects__header">Selected Projects</h3>
+      <a href="/about" className="menu__link">About</a>
+    </div>
     <div className="spaceRow" />
     <Project
       aboutPageLink="/detail/personal-website-v2"
@@ -16,7 +16,9 @@ const Home = () => (
           <p>
             I thought it would be fun to use React and Node in a side project, and here it is!
           </p>
-          <a href="https://github.com/timothy-b/personal-website-v2">GitHub</a>
+          <div className="project__footer">
+            <a href="https://github.com/timothy-b/personal-website-v2">GitHub</a>
+          </div>
         </Fragment>
       )} />
     <Project 
