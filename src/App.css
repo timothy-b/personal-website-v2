@@ -1,5 +1,31 @@
-.body {
-  background-color: black;
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPGQ.woff2) format('woff2');
+  /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format('woff2');
+  /* unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; */
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .App {
@@ -7,25 +33,13 @@
   background-color: black;
 }
 
-.apacheLogo {
-  height: 60px;
+.App-footer a {
+  color: #00bbff;
 }
 
-.reactLogo {
-  animation: App-logo-spin infinite 30s linear;
-  height: 40px;
-}
-
-.githubLogo {
-  height: 36px;
-}
-
-.linkedinLogo {
-  height: 28px;
-}
-
-.nodeLogo {
-  height: 128px;
+.App-footer a:hover {
+  color: #47c4fd;
+  text-decoration: none;
 }
 
 .App-header {
@@ -33,6 +47,7 @@
   height: 150px;
   padding: 20px;
   color: white;
+  font-family: Lato, sans-serif;
 }
 
 .App-header h1 {
@@ -54,39 +69,32 @@
   padding-top: 1em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.logo-apache {
+  height: 60px;
 }
 
-.projects__header {
-  float: left;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  color: white;
+.body {
+  background-color: black;
 }
 
-.project__title, .menu__link, .menu__breadcrumb {
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  color: white;
+.logo-react {
+  animation: App-logo-spin infinite 30s linear;
+  height: 40px;
 }
 
-.App-footer a {
-  color: #00bbff;
+.logo-github {
+  height: 36px;
 }
 
-.App-footer a:hover {
-  color: #47c4fd;
-  text-decoration: none;
+.logo-linkedin {
+  height: 28px;
 }
 
-.project a:hover {
-  color: #47c4fd;
-  text-decoration: none;
+.logo-node {
+  height: 128px;
 }
 
-.project__title:hover, .menu__link:hover, .menu__breadcrumb:hover {
+a>.project__title:hover, .menu__link:hover, .menu__breadcrumb:hover {
   color: #00bbff;
   text-decoration: none;
 }
@@ -99,12 +107,6 @@
   float: right;
 }
 
-.row>.project {
-  background-color: #2b3e50;
-  overflow: auto;
-  display: block;
-}
-
 div>.row {
   overflow: auto;
   display: block;
@@ -115,15 +117,59 @@ div>.row {
   margin-right: auto;
 }
 
+#headerRow a {
+  color: #00bbff;
+}
+
+#headerRow a:hover {
+  color: #47c4fd;
+}
+
 div>.container {
   max-width: unset;
+}
+
+.project {
+  background-color: #2b3e50;
 }
 
 .project a {
   color: #00bbff;
 }
 
+.project a:hover {
+  color: #47c4fd;
+  text-decoration: none;
+}
+
+.project h2 {
+  background-color: #3d3d3d;
+}
+
 .project p {
+  color: white;
+}
+
+.project__body {
+  margin: 1em;
+}
+
+.project__header {
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+}
+
+.projects__header {
+  float: left;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.project__title, .menu__link, .menu__breadcrumb {
+  font-family: Lato, sans-serif;
+  font-weight:400;
   color: white;
 }
 
@@ -132,14 +178,44 @@ div>.container {
   background-color: #2b3e50;
 }
 
-.project h2 {
-  background-color: #3d3d3d;
+@media only screen and (min-width: 768px) {
+  .projectTwoColumns {
+    display: grid;
+    grid-template:
+      [row1-start] "header header" [row1-end]
+      [row2-start] "left right" [row2-end]
+      [row3-start] "footer footer" [row3-end]
+      / 1fr 1fr;
+  }
+
+  .projectTwoColumns__header {
+    grid-area: header;
+  }
+
+  .projectTwoColumns__left {
+    grid-area: left;
+    justify-self: center;
+    margin: 1em;
+  }
+
+  .projectTwoColumns__right {
+    grid-area: right;
+    justify-self: left;
+    text-align: left;
+    margin: 1em;
+  }
+
+  .projectTwoColumns__footer {
+    grid-area: footer;
+  }
 }
 
-#headerRow a {
-  color: #00bbff;
-}
+@media only screen and (max-width: 768px) {
+  .projectTwoColumns__left {
+    margin: 1em;
+  }
 
-#headerRow a:hover {
-  color: #47c4fd;
+  .projectTwoColumns__right {
+    margin: 1em;
+  }
 }

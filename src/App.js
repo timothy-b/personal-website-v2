@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import About from './pages/about.jsx';
 import Detail from './pages/detail.jsx';
 import Home from './pages/home.jsx';
-import githubLogo from './GitHub_Logo_White.png';
+import githubLogo from './GitHub_Logo_White_resized.png';
 import githubImage from './GitHub-Mark-Light-32px.png';
 import linkedinLogo from './LinkedIn_Logo_White.png';
 import reactLogo from './reactLogo.svg';
@@ -41,9 +41,9 @@ class App extends Component {
           <p>
             <a href="mailto:tim@timothy-b.com">tim@timothy-b.com</a>&emsp;|&emsp;
             <a href="http://timothy-b.com/downloads/TGB_Resume.pdf">Resume</a>&emsp;|&emsp;
-            <a href="https://www.linkedin.com/in/timothy-baumgartner-759b7b123"><img src={linkedinLogo} className="linkedinLogo" alt="linkedinLogo" /></a>&emsp;|&emsp;
-            <a href="https://github.com/timothy-b"><img src={githubLogo} className="githubLogo" alt="githubLogo"/><img src={githubImage} alt="githubImage" /></a>&emsp;|&emsp;
-            Powered by React<img src={reactLogo} className="reactLogo" alt="reactLogo" />
+            <a href="https://www.linkedin.com/in/timothy-baumgartner-759b7b123"><img src={linkedinLogo} className="logo-linkedin" alt="logo-linkedin" /></a>&emsp;|&emsp;
+            <a href="https://github.com/timothy-b"><img src={githubLogo} className="logo-github" alt="logo-react"/><img src={githubImage} alt="githubImage" /></a>&emsp;|&emsp;
+            Powered by <a href="https://reactjs.org/">React <img src={reactLogo} className="logo-react" alt="logo-react" /></a>
           </p>
         </div>
       </div>

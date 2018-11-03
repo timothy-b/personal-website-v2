@@ -1,30 +1,26 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 
-const Project = ({aboutPageLink, title, body}) => {
-  return (
-    <div className="project">
-      <h2>
-        <a href={aboutPageLink}>
+const Project = ({detailPageLink, title, body, footer}) => {
+  const titleContent = detailPageLink
+    ? (<h2>
+        <a href={detailPageLink}>
           <span className="project__title">{title}</span>
         </a>
-      </h2>
-      {body}
+      </h2>)
+    : (<h2 className="project__title">{title}</h2>)
+
+  return (
+    <div className="project">
+      {titleContent}
+      <div className="project__body">
+        {body}
+      </div>
+      <div className="project__footer">
+        {footer}
+      </div>
+      <div className="spaceRow"></div>
     </div>
   );
 }
 
-const ProjectRow = ({aboutPageLink, title, body}) => {
-  return (
-    <Fragment>
-      <div className="row">
-        <Project
-          aboutPageLink={aboutPageLink}
-          title={title}
-          body={body} />
-      </div>
-      <div className="spaceRow" />
-    </Fragment>
-  );
-}
-
-export default ProjectRow;
+export default Project;
