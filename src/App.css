@@ -90,6 +90,13 @@
   height: 28px;
 }
 
+.logo-particle {
+  height: 256px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo-node {
   height: 128px;
 }
@@ -123,6 +130,10 @@ div>.row {
 
 #headerRow a:hover {
   color: #47c4fd;
+}
+
+.iotSecSchematic {
+  height: 512px;
 }
 
 div>.container {
