@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import About from './pages/about.jsx';
 import Detail from './pages/detail.jsx';
 import Home from './pages/home.jsx';
-import githubLogo from './GitHub_Logo_White_resized.png';
-import githubImage from './GitHub-Mark-Light-32px.png';
-import linkedinLogo from './LinkedIn_Logo_White.png';
-import reactLogo from './reactLogo.svg';
+import githubLogo from './images/GitHub_Logo_White.png';
+import githubImage from './images/GitHub-Mark-Light-32px.png';
+import linkedinLogo from './images/LinkedIn_Logo_White.png';
+import reactLogo from './images/reactLogo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 

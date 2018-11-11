@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import Project from '../components/project';
 import ProjectTwoColumns from '../components/projectTwoColumns';
-import apacheLogo from '../Apache_server.png';
-import nodeLogo from '../nodejs-new-pantone-white.png';
-import particleLogo from '../particle_logo.png';
-import reactLogo from '../reactLogo.svg';
-import staScreenshot from '../STA_app_screenshot_0.png';
-import iotSecSchematic from '../IOT-SEC Schematic.png';
+import apacheLogo from '../images/Apache_server.png';
+import nodeLogo from '../images/nodejs-new-pantone-white.png';
+import particleLogo from '../images/particle_logo.png';
+import reactLogo from '../images/reactLogo.svg';
+import staScreenshot from '../images/STA_app_screenshot.png';
+import iotSecSchematic from '../images/IOT-SEC Schematic.png';
 
 const Detail = ({remainingUrlComponents}) => {
   
@@ -50,7 +50,7 @@ const iotSec =
 
 const personalWebsiteV2 =
   <Project
-    title="This Website!"
+    title="This website!"
     body={(
       <Fragment>
         <p>
