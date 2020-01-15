@@ -23,13 +23,11 @@ On build server:
 npm run build
 scp -r -P <PORT_NUMBER> build username@example.com:/home/user/public_html/personal-website-v2
 
-scp -r -P <PORT_NUMBER> run.sh username@example.com:/home/user/public_html/
+scp -r -P <PORT_NUMBER> scripts/*.sh username@example.com:/home/user/public_html/personal-website-v2
 ```
 
 On deployment server:
 ```
-mkdir personal-website-v2
-chmod +x run.sh
-npm install -g serve
+chmod +x run.sh stop.sh
 ./run.sh
 ```
