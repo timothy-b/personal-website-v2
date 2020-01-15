@@ -1,3 +1,5 @@
 #!/bin/bash
-npm install -g serve@10.1.2
-nohup serve -s build &
+PATH=$PATH:/home/tbaumgar/bin
+/home/tbaumgar/bin/npm install -g serve@10.1.2
+cd /home/tbaumgar/public_html/personal-website-v2
+/usr/bin/nohup /home/tbaumgar/bin/serve -s build >> /home/tbaumgar/log.txt 2>> /home/tbaumgar/err.log
